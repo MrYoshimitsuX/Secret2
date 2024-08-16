@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="web icon" href="/icons/key.png">
+</head>
+<body>
+    <div class="title">Login</div>
+    <div class="container">
+
+    <div class="form-div">
+        <form action="/login" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" required><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+            <button id="login-btn">Login</button>
+            <a href="/resetpass">Forgot Your Password?</a>
+        </form>
+    </div>
+
+
+    <div class="container-google">
+    <a href="/auth/google/login" class="google-a">
+    <div id="google-btn">
+        <img src="icons/google-icon.svg"> 
+        <div id="google-text">Sign In with Google</div>
+    </div>
+    </a>
+</div>
+
+
+</div>
+</body>
+</html>

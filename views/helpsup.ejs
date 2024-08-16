@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets</title>
+    <link rel="stylesheet" href="/css/helpsup.css">
+    <link rel="web icon" href="/icons/key.png">
+</head>
+<body>
+        <div class="container">
+
+            <div class="header">CONTACT ME</div>
+
+            <hr>
+            
+            <div class="form-container">
+
+                <div class="form-div">
+                    <form action="/settings/helpsupport" method="post">
+                        <div class="online-inq">ONLINE INQUIRY</div>
+                        <input type="text" placeholder="Name" name="name" required><br>
+                        <input type="email" placeholder="Email" name="email" id="email" required><br>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="Phone" name="phone" id="phone" required><br>
+                        <input type="text" placeholder="Topic" name="topic" id="topic" required><br>
+                        <textarea placeholder="Message" name="message" id="message" required></textarea>
+                        
+                        <div id="button-div">
+                            <button type="submit" name="button" value="send_contact">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-header" id="contact-header">CONTACT DETAILS</div>
+                    <div style="position: relative; left:5%; display: flex; justify-content: center;">korayakben@secrets.com</div>
+                   <div style="display: flex; justify-content: center; position: relative; left: 5%;" id="phone-number">(908)-725-1256</div>
+
+                   <h3 style="display: flex; justify-content: center;">New York</h3>
+                   <div style="width: 60%; position: relative; left: 25%; top:-1rem;">350 5th Ave, Manhattan, NY 10118</div>
+
+                   <h3 style="display: flex; justify-content: center;">Pennsylvania</h3>
+                   <div style="width: 60%; position: relative; left: 25%; top:-1rem;">1600 Arch St, Philadelphia, PA 19103</div>
+
+                   <h3 style="display: flex; justify-content: center;">Illinois Office</h3>
+                   <div style="width: 60%; position: relative; left: 25%; top:-1rem;">233 S Wacker Dr, Chicago, IL 60606</div>
+                </div>
+            </div>
+
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.container , .title{
+    position: relative;
+    top:2rem;
+}
+
+.title{
+    display: inline;
+    font-size: 200%;
+    position: relative;
+    left:32%;
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+}
+
+.form-div form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 3px rgb(204, 204, 204);
+    width: 35%;
+    height: 21.7rem;
+    gap:0.5rem;
+    padding-left: 1%;
+}
+
+.form-div form label{
+    position: relative;
+    top:0.5rem;
+    font-size: 130%;
+}
+
+.form-div form input{
+    width: 95%;
+    height: 1.5rem;
+}
+
+#btn-div{
+    display: flex;
+    justify-content: center;
+    padding-right: 1%;
+    position: relative;
+    top:0.7rem;
+}
+
+button{
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    border-style: none;
+    cursor: pointer;
+    transition: 1s;
+    width: 40%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: #fff;
+    color:black;
+}
+
+#home-director{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:2.5rem;
+    font-size: 120%;
+    gap:0.5rem;
+    padding-left: 17%;
+}
+
+
+#home-director i{
+    font-size: 130%;
+    position: relative;
+    top:0.2rem;
+}
+#home-director a{
+    text-decoration: none;
+    color:rgb(46, 46, 46);
+    position: relative;
+    transition: 1s;
+}
+
+#home-director a:hover{
+    text-decoration: none;
+    color:rgb(146, 146, 146);
+    position: relative;
+}
+
+@media (max-width:1290px){
+    .form-div{
+        position: relative;
+        left: -5rem;
+        width: 120%;
+    }
+
+    #home-director{
+        padding-left: 27%;
+    }
+
+}
+
+@media(max-width:1230px){
+    #home-director{
+        padding-left: 25%;
+    }
+}
+
+@media(max-width:1150px){
+    #home-director{
+        padding-left: 23%;
+    }
+}
+
+@media (max-width:1110px){
+    .title{
+        position: relative;
+        left: 31.5%;
+    }
+
+    @media(max-width:1230px){
+        #home-director{
+            padding-left: 21%;
+            font-size: 100%;
+        }
+    }
+
+}
+
+@media (max-width:950px){
+    .title{
+        position: relative;
+        left: 21.5%;
+    }
+
+    .form-div{
+        position: relative;
+        left:-28%;
+        width: 150%;
+    }
+
+     #home-director{
+        padding-left: 20%;
+    }   
+
+}
+
+@media(max-width:855px){
+    .title{
+        position: relative;
+       left: 24%;
+    }
+    .form-div{
+        position: relative;
+        left: -25%;
+    }
+        #home-director{
+            padding-left: 23%;
+        }
+}
+
+
+@media (max-width:775px){
+    .title{
+        position: relative;
+        left: 21%;
+    }
+
+    .form-div{
+        position: relative;
+        left:-38%;
+        width: 180%;
+    }
+
+    #home-director{
+        padding-left: 35%;
+    }
+
+}
+
+@media(max-width:700px){
+        #home-director{
+            padding-left: 28%;
+        }
+}
+
+@media(max-width:650px){
+        #home-director{
+            padding-left: 29%;
+        }
+}
+
+@media (max-width:585px){
+    .title{
+        position: relative;
+        left: 14%;
+    
+    }
+
+    .form-div{
+        position: relative;
+        left:-55%;
+        width: 210%;
+    }
+}
+
+@media (max-width:520px){
+    .title{
+        position: relative;
+        left: 8%;
+    
+    }
+
+    .form-div{
+        position: relative;
+        left:-70%;
+        width: 240%;
+    }
+
+    #home-director{
+        padding-left: 30%;
+    }
+}
+
+@media (max-width:420px){
+    .title{
+        position: relative;
+        left: 14.5%;
+    }
+
+    #home-director{
+        padding-left: 24%;
+    }
+}
+
+@media (max-width:390px){
+    .title{
+        position: relative;
+        left: 12.5%;
+    }
+
+    #home-director{
+        padding-left: 21%;
+    }
+}
+
+@media (max-width:380px){
+    .title{
+        position: relative;
+        left: 10.5%;
+    }
+
+    button{
+        width: 50%;
+    }
+
+    #home-director{
+        padding-left: 16%;
+    }
+}
+
+@media (max-width:350px){
+    .title{
+        font-size: 190%;
+        position: relative;
+        left: 8.5%;
+    }
+
+    #home-director{
+        padding-left: 11%;
+    }
+}
+
+

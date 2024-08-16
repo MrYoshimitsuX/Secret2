@@ -1,0 +1,382 @@
+body{
+    background-color: rgb(230, 230, 230);
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1.7rem;
+    position: relative;
+    top:2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#settings-img{
+    width: 25%;
+}
+
+.title{
+    font-size: 320%;
+    font-weight: 600;
+}
+
+.card{
+    width: 70%;
+    height: 100%;
+}
+
+#personal-card{
+    position: relative;
+    left: 9%;
+}
+
+#priv-card{
+    width: 77.5%;
+    position: relative;
+    right:9%;
+}
+
+#terms-card{
+    width: 76.5%;
+    position: relative;
+    left: 10%;
+}
+
+#help-card{
+    position: relative;
+    left: 0%;
+    width: 71%;
+}
+
+#help-card img{
+    height: 14.5rem;
+}
+
+.row-1 , .row-2{
+    position: relative;
+    top:2.3rem;
+    left: 4%;
+    display: flex;
+    gap: -12rem;
+    /* flex-wrap: wrap; */
+}
+
+.row-2{
+    position: relative;
+    top:4.3rem;
+}
+
+hr{
+    background-color: rgb(172, 172, 172);
+    height: 0,1rem;
+    width: 60%;
+    position: relative;
+    top:1.2rem;
+}
+
+.button{
+    height: 2.5rem;
+    border-style: none;
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+button:hover{
+    background-color: #fff;
+    color:rgb(46, 46, 46);
+}
+
+#secrets-director{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:5rem;
+    font-size: 120%;
+    gap:0.5rem;
+    padding-left: 40%;
+    height: 5rem;
+}
+
+
+#secrets-director i{
+    font-size: 130%;
+    position: relative;
+    top:0.2rem;
+}
+#secrets-director a{
+    text-decoration: none;
+    color:rgb(46, 46, 46);
+    position: relative;
+    transition: 1s;
+}
+
+#secrets-director a:hover{
+    color:rgb(146, 146, 146);
+}
+
+
+@media(max-width:1290px){
+    #help-card img{
+        height: 14.2rem;
+    }
+
+    #secrets-director{
+        position: relative;
+        padding-left: 40%;
+    }
+}
+
+@media(max-width:1200px){
+    #help-card img{
+        height: 12.1rem;
+    }
+}
+
+@media(max-width:1150px){
+    #secrets-director{
+        position: relative;
+        padding-left: 47%;
+    }
+}
+
+@media(max-width:992px){
+    #secrets-director{
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .row-1, .row-2{
+        gap:2.5rem;
+        position: relative;
+        left: 0.3%;
+    }
+
+    #personal-card{
+        width: 90%;
+    }
+
+    #priv-card{
+        width: 99%;
+    }
+
+    #terms-card{
+        width: 98%;
+    }
+    #terms-card img{
+       height: 34%;
+    }
+
+    #help-card{
+        width: 91%;
+    }
+}
+
+
+/* personal 77 priv 77.5     terms 76.5  help 71 */
+
+@media(max-width:765px){
+    .row-1, .row-2{
+        width: 135%;
+    }
+
+    hr{
+        width: 75%;
+    }
+
+}
+
+@media(max-width:700px){
+    .row-1, .row-2{
+        width: 120%;
+    }
+}
+
+@media(max-width:610px){
+    #settings-img{
+        width: 35%;
+    }
+    .row-1, .row-2{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: -1.2%;
+    }
+
+    #personal-card{
+        position: relative;
+        left: 6%;
+    }
+
+    #priv-card{
+       position: relative;
+       left: 5.9%;
+       width: 90.3%;
+    }
+
+    #terms-card{
+        position: relative;
+        left: 5.9%;
+        width: 90.5%;
+        height: 34rem;
+     }
+
+     #terms-card img{
+        height: 18rem; 
+     }
+
+     #help-card{
+        position: relative;
+        left: 6%;
+        width: 90.5%;
+        height: 35.5rem;
+     }
+
+     #help-card img{
+        height: 18rem;
+     }
+    
+}
+
+@media (max-width:576px){
+    .row-1, .row-2{
+        width: 105%;
+    }
+
+    #terms-card{
+        height: 35.5rem;
+    }
+
+    #terms-card img{
+        height: 17rem;
+    }
+
+    #help-card{
+        height: 37rem;
+    }
+
+    #help-card img{
+        height: 17rem;
+    }
+
+    #secrets-director{
+        font-size: 100%;
+        position: relative;
+        left: -3%;
+    }
+}
+
+
+@media (max-width:522px){
+
+    #terms-card {
+        height: 35rem;
+    }
+
+    #terms-card img{
+        height: 15rem;
+    }
+
+    #help-card{
+        height: 35rem;
+    }
+
+    #help-card img{
+        height: 15rem;
+    }
+}
+
+@media (max-width:465px){
+    #terms-card{
+        height: 36rem;
+        }
+        
+        #help-card{
+            height: 37rem;
+        }
+    #secrets-director{
+        font-size: 100%;
+        position: relative;
+        left: -5%;
+    }
+}
+
+@media(max-width:437px){
+    #settings-img{
+        width: 42%;
+    }
+
+    #terms-card, #help-card{
+        height: 35.5rem;
+    }
+
+    #terms-card img ,#help-card img{
+        height: 13rem;
+    } 
+
+}
+
+@media(max-width:415px){
+    hr{
+        width: 80%;
+    }
+
+    #terms-card{
+        height: 35.6rem;
+    }
+
+    #help-card{
+        height: 37rem;
+    }   
+
+    #secrets-director{
+        font-size: 90%;
+        position: relative;
+        left: -5.5%;
+    }
+}
+
+@media(max-width:400px){
+
+    #settings-img{
+        width: 47%;
+    }
+
+    #terms-card{
+        height: 34rem;
+    }   
+
+    #help-card{
+        height: 35.6rem;
+    }
+
+    #terms-card img, #help-card img{
+        height: 11.5rem;
+    }
+
+    #secrets-director{
+        font-size: 90%;
+        position: relative;
+        left: -7%;
+    }
+}
+
+@media(max-width:381px){
+    #help-card{
+        height: 37rem;
+    }
+}
+
+
+
+
+

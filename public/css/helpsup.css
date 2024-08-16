@@ -1,0 +1,252 @@
+body{
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 330%;
+    position: relative;
+    top:6rem;
+}
+
+hr{
+    background-color: rgb(152, 152, 152);
+    width: 40%;
+    height: 0.05rem;
+    position: relative;
+    top:6rem;
+    border-style: none;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    gap:30%;
+    position: relative;
+    top:8.5rem;
+}
+
+.form-div{
+    width: 140%;
+    position: relative;
+    left:8%;
+}
+
+
+form{
+    width: 100%;
+    font-size: 180%;
+    display: flex;
+    flex-direction: column;
+}
+
+.online-inq{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-1rem;
+    font-size: 112%;
+}
+
+.contact-details{
+    font-size: 118%;
+    position: relative;
+    left: -11%;
+    width: 114%;
+}
+
+.contact-header{
+    font-size: 170%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-1rem;
+}
+
+.form-div form > input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.form-div form > textarea{
+    height: 4.5rem;
+    width: 100%;
+}
+
+#email{
+    position: relative;
+    top:-0.7rem;
+}
+
+#phone{
+    position: relative;
+    top:-1.4rem;
+}
+
+#topic{
+    position: relative;
+    top:-2.1rem;
+}
+
+#message{
+    position: relative;
+    top:-2.8rem;
+}
+
+#button-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top:-1rem;
+}
+
+#button-div > button{
+    width: 50%;
+    height: 2.5rem;
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    border-style: none;
+    border-radius: 3px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#button-div > button:hover{
+    background-color: rgb(255, 255, 255);
+    color:#000;
+}
+
+
+@media(max-width:1290px){
+    .form-div{
+        position: relative;
+        left: 5%;
+    }
+
+    .contact-details{
+        position: relative;
+        left: -5%;
+    }
+}
+
+@media(max-width:965px){
+
+    .online-inq{
+        font-size: 88%;
+    }
+
+    .contact-header{
+        font-size: 145%;
+    }
+
+    .contact-details{
+        font-size: 110%;
+    }
+}
+
+@media(max-width:759px){
+
+    .form-div form > input, .form-div form > textarea{
+        width: 125%;
+    }
+
+    .online-inq{
+        font-size: 77%;
+        position: relative;
+        left: 10%;
+    }
+
+    .contact-header{
+        font-size: 125%;
+    }
+
+    .contact-details{
+        font-size: 110%;
+    }
+
+    #button-div > button{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+}
+
+@media(max-width:656px){
+
+    body{
+        overflow-y: scroll;
+    }
+
+    .form-container{
+        flex-wrap: wrap;
+        gap:3rem;
+    }
+
+    .online-inq{
+        font-size: 120%;
+        position: relative;
+        left: 3%;
+    }
+
+    .form-div form > input, .form-container form > textarea{
+        width: 110%;
+    }
+
+    #button-div > button{
+        position: relative;
+        left: 1%;
+    }
+
+    .form-div{
+        position: relative;
+        left: -4%;
+        width: 80%;
+    }
+
+    .contact-header{
+        font-size: 195%;
+        position: relative;
+        left: 5%;
+    }
+
+    .contact-details div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-details h3{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 5%;
+    }
+    
+    #phone-number{
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media(max-width:468px){
+    #contact-header{
+        font-size: 195%;
+    }
+
+    .contact-details  div{
+        font-size: 73%;
+    }
+
+    #button-div > button{
+        position: relative;
+        left: 4%;
+    }
+    
+}

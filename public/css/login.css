@@ -1,0 +1,307 @@
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: inline;
+    font-size: 250%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    position: relative;
+    left: 20%;
+    top:2rem;
+}
+
+.form-div{
+    background-color: #fff;
+    width: 40%;
+    height: 13rem;
+    position: relative;
+    top:2.6rem;
+    left:20%;
+    box-shadow: 0px 0px 5px 3px rgb(204, 204, 204);
+}
+
+.form-div label{
+    display: block;
+    font-size: 130%;
+    position: relative;
+    top:0.7rem;
+    left: 2%;
+}
+
+.form-div input{
+    display: block;
+    position: relative;
+    top:1rem;
+    width: 95%;
+    height: 1.5rem;
+    left: 2%;
+}
+
+#login-btn{
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    transition: 1s;
+    position: relative;
+    top:2rem;
+    left: 2%;
+    width: 20%;
+    height: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#login-btn:hover{
+    background-color: #fff;
+    color:black;
+    transition: 1s;
+}
+
+
+.container-google{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:5rem;
+    height: 4rem;
+    width: 80%;
+}
+
+.google-a{
+    width: 50%;
+    position: relative;
+    left: 0%;
+    top:-0.2rem;
+}
+
+#google-btn{
+    display: flex;
+    width: 100%;
+    gap:0.3rem;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 3px rgb(204, 204, 204);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#google-btn:hover{
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 6px rgb(204, 204, 204);
+}
+
+#google-btn > *{
+    position: relative;
+    left: 1rem;
+}
+
+#google-btn > img{
+    width: 8%;
+}
+
+#google-text{
+    padding-top: 1.2rem;
+    font-size: 160%;
+}
+
+a{
+    position: relative;
+    top:2rem;
+    left: 3%;
+    font-size: 80%;
+    transition: 1s;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
+
+a:hover{
+    color:#a9a9a9;
+    transition: 1s;
+}
+
+@media(max-width:1290px){
+    .form-div{
+        width: 50%;
+    }
+    .container-google{
+        position: relative;
+        right: 5%;
+        width: 100%;
+    }
+}
+
+@media(max-width:900px){
+    .form-div{
+        width: 55%;
+    }
+    .form-div input{
+        width: 95%;
+    }
+    .container-google{
+        position: relative;
+        right: 2.5%;
+        width: 100%;
+    }
+
+    .google-a{
+        width: 55%;
+    }
+
+    #google-btn{
+        width: 100%;
+
+    }
+    #google-btn img {
+        width: 10%;
+
+    }
+}
+
+@media(max-width:650px){
+    .form-div{
+        width: 65%;
+    }
+    .form-div input{
+        width: 93%;
+    }
+    .container-google{
+        position: relative;
+        right: -2.4%;
+        width: 100%;
+    }
+
+    .google-a{
+        width: 65%;
+    }
+
+    #google-btn img{
+        width: 12%;
+    }
+
+    #google-text{
+        font-size: 147%;
+        position: relative;
+        top:0.2rem;
+    }
+}
+
+
+@media(max-width:475px){
+    .title{
+        position: relative;
+        left:13%;
+    }
+   .form-div{
+    position: relative;
+    left:13%;
+    width: 80%;
+   }
+
+   .google-a{
+    width: 80%;
+   }
+
+   #google-btn{
+    position: relative;
+    left:0.5%;
+    width: 100%;
+   }
+    #google-text{
+        font-size: 140%;
+        position: relative;
+        top:0.2rem;
+        left: 6%;
+    }
+
+    #login-btn{
+        width: 30%;
+    }
+    a{
+        font-size: 75%;
+    }
+}
+
+@media(max-width:420px){
+    #google-btn > *{
+        position: relative;
+        left: 3.2%;
+    }
+
+    #google-btn{
+        position: relative;
+        left: -5%;
+        width: 105%;
+    }
+
+    .form-div{
+        position: relative;
+        left:8%;
+        width: 85%;
+    }
+
+}
+
+@media(max-width:400px){
+    #google-btn img{
+        width: 15%;
+        
+    }
+
+    #google-text{
+        font-size: 140%;
+        position: relative;
+        top:0.2rem;
+        left: 4%;
+    }
+}
+
+@media(max-width:380px){
+    #google-text{
+        font-size: 140%;
+        position: relative;
+        top:0.2rem;
+        left: 3%;
+    }
+}
+
+@media(max-width:340px){
+    .form-div{
+        width: 80%;
+    }
+
+    #google-btn{
+        position: relative;
+        left: 0.5%;
+        width: 100%;
+    }
+
+    #google-btn img{
+        width: 15%;
+    }
+    #google-text{
+        font-size: 125%;
+        position: relative;
+        top:0.2rem;
+        left: 3%;
+    }
+}
+
+@media(max-width:310px){
+    a{
+        font-size: 70%;
+    }
+}

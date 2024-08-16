@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="web icon" href="/icons/key.png">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <img src="icons/settings.svg" id="settings-img">
+            <span class="title">Settings</span>
+        </div>
+
+        <hr>
+
+        <div class="row-1">
+            <div id="personal-info">
+                <div class="card" id="personal-card">
+                    <img src="/images/personal-info.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Personal Information</h5>
+                      <p class="card-text">As a user of this website, you have the ability to view and manage your personal information at any time. Your data is securely stored and can only be accessed by you. We ensure that your privacy is protected, and you have full control over your information. You can see your personal informations here.</p>
+                      <form action="/settings" method="post">
+                      <button type="submit" name="button" class="button" value="personal_info">Personal Information Page</button>
+                    </form>
+                    </div>
+                  </div>
+            </div>
+            <div id="priv-sec">
+                <div class="card" id="priv-card">
+                    <img src="/images/priv-sec.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Privacy and Security</h5>
+                      <p class="card-text">Your personal information on this website is used exclusively for logging in and securely storing your private notes, which only you can access. We do not share your data with third parties. We are committed to ensuring your privacy and delivering a secure user experience. </p>
+                      <form action="/settings" method="post">
+                      <button type="submit" name="button" class="button" value="priv_sec">Privacy and Security Page</button>
+                    </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <div id="terms-pol">
+                <div class="card" id="terms-card">
+                    <img src="/images/term-pol.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Terms and Policies</h5>
+                      <p class="card-text">By using this website, you agree to our terms and policies, which ensure your personal information is handled with care and confidentiality. Your data is protected under our strict privacy guidelines, and you have full access to manage your information as needed. We are committed to maintaining a secure and transparent environment for all users.</p>
+                      <form action="/settings" method="post">
+                      <button type="submit" name="button" class="button" value="terms_pol">Terms and Policies Page</button>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+            <div id="help-sup">
+                <div class="card" id="help-card">
+                    <img src="/images/help-sup.jpg" class="card-img-top"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Help and Support</h5>
+                      <p class="card-text">If you have any questions or need assistance while using this website, our help and support team is here to assist you. Whether it's about managing your personal information or navigating the site, we're dedicated to providing the help you need. Feel free to reach out anytime for a prompt and reliable response. We're here to ensure your experience is smooth and enjoyable.</p>
+                      <form action="/settings" method="post">
+                      <button type="submit" name="button" class="button" value="help_sup">Help and Support Page</button>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="secrets-director">
+      <a href="/secrets"><i class="fa-solid fa-arrow-left"></i> Get back to Secrets Page</a>
+  </div>
+
+</body>
+</html>

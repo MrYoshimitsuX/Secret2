@@ -1,0 +1,239 @@
+body{
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.7rem;
+    position: relative;
+    top:3rem;
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    gap:1.7rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(181, 181, 181);
+    width: 80%;
+    height: 27rem;
+    position: relative;
+    top:-4rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px rgb(181, 181, 181);
+}
+
+.header{
+    font-size: 270%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+hr{
+    height: 0.1rem;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    position: relative;
+    top:-2.5rem;
+}
+
+.dropdown{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown button{
+    background-color: rgb(46, 46, 46);
+    border-style: none;
+    transition: 1s;
+}
+
+.dropdown button:hover{
+    background-color: rgb(181, 181, 181);
+    color:#000;
+}
+
+.dropdown button#delete-account:hover{
+    background-color: rgb(196, 2, 2);
+    color:#fff;
+}
+
+.btn{
+    width: 70%;
+    height: 4rem;
+}
+
+.btn > span{
+    font-size: 140%;
+    font-weight: 600;
+}
+
+.dropdown-menu{
+    width: 70%;
+}
+
+.dropdown form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.3rem;
+}
+
+.dropdown form input{
+    width: 80%;
+}
+
+.dropdown form label{
+    position: relative;
+    top:0.5rem;
+    padding-left: 10%;
+    font-size: 140%;
+    width: 100%;
+}
+
+.dropdown form button{
+    position: relative;
+    top:0.7rem;
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    border-radius: 3px;
+    border-style: none;
+    width: 30%;
+    height: 2.5rem;
+    transition: 1s;
+    margin-bottom: 2%;
+}
+
+.dropdown form button:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(46, 46, 46);
+}
+
+.history-div{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+}
+
+#delete-account-btn:hover{
+    background-color: red;
+    color:#fff;
+}
+
+@media(max-width:992px){
+    .dropdown-container{
+        width: 105%;
+    }
+}
+
+
+@media(max-width:768px){
+    .header{
+        font-size: 250%;
+    }
+
+    .dropdown-container{
+        width: 120%;
+    }
+
+    .dropdown-menu form button{
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    .history-div span{
+        font-size: 90%;
+    }
+
+    hr{
+        width: 70%;
+    }
+}
+
+@media(max-width:647px){
+    .dropdown-container{
+        width: 110%;
+    }
+
+    .history-div span{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:595px){
+    .dropdown-container{
+        width: 90%;
+    }
+
+    .history-div span{
+        font-size: 65%;
+    }
+}
+
+@media(max-width:510px){
+    .header{
+        font-size: 220%;
+    }
+
+    .history-div span{
+        font-size: 55%;
+    }
+
+    .dropdown form button{
+        width: 70%;
+    }
+}
+
+@media(max-width:453px){
+    .header{
+        font-size: 202%;
+    }
+
+    .dropdown span{
+        font-size: 130%;
+    }
+
+    .history-div span{
+        font-size: 50%;
+    }
+    
+    .dropdown-menu form label{
+        font-size: 120%;
+    }
+}
+
+@media(max-width:418px){
+    .header{
+        font-size: 180%;
+    }
+    
+    .dropdown-container{
+        width: 90%;
+    }
+
+    .dropdown span{
+        font-size: 130%;
+    }
+    .history-div span{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:376px){
+    .header{
+        font-size: 170%;
+    }
+
+    .dropdown span{
+        font-size: 120%;
+    }
+
+    .history-div span{
+        font-size: 40%;
+    }
+}
+

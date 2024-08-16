@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets</title>
+    <link rel="stylesheet" href="resetpass.css">
+    <link rel="web icon" href="/icons/key.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="title">Reset Password</div>
+    <div class="container">
+
+        <div class="form-div">
+            <form action="/resetpass" method="post">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label for="currentpass">Current Password</label>
+                <input type="password" name="currentpass" required>
+                <label for="newpassword">New Password</label>
+                <input type="password" name="newpassword" required>
+                <label for="confirmpass">Confirm Password</label>
+                <input type="password" name="confirmpass" required>
+
+                <div id="btn-div">
+                    <button type="submit" name="button">Change Password</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div id="home-director">
+        <a href="/"><i class="fa-solid fa-arrow-left"></i> Get back to Home Page</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets</title>
+    <link rel="stylesheet" href="submit.css">
+    <link rel="web icon" href="/icons/key.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container"> 
+
+        <div class="user-secret">
+            <img src="icons/spy.svg">
+        </div>
+
+        <div class="header">Secrets</div>
+
+        <div class="warning-text">Don't keep your secrets, share them anonymously!</div>      
+        
+        <% secrets.forEach(function(element, index){ %>
+
+            <div class="secret-container">
+                <div class="secret-div" id="secret-<%= index %>"><%= element %></div>
+                <div>
+                    <form action="/submit" method="post">
+                        <input type="hidden" name="index" value="<%= index %>">
+                        <button class="delete-btn" name="button" value="delete-btn">X</button>
+                    </form>
+                </div>
+            </div>
+
+           <% }); %> 
+
+        <form action="/submit" method="post">
+            <div class="secret-input">
+                <input type="text" placeholder="Your Secret" name="secret_input">
+            </div>
+
+            <div class="submitbtn-div">
+                <button name="button" id="submit-btn" value="submit-btn">Submit</button>
+                <button name="button" id="clear-btn" value="clear-btn">Clear</button>
+            </div>
+        </form>
+       
+    </div>
+
+    <div id="secrets-director">
+        <a href="/secrets"><i class="fa-solid fa-arrow-left"></i> Get back to Secrets Page</a>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

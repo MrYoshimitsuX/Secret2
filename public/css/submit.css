@@ -1,0 +1,383 @@
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header{
+    font-size: 450%;
+    position: relative;
+    top:-1.5rem;
+}
+
+.user-secret{
+    display: flex;
+    justify-content: center;
+}
+
+.user-secret img{
+    width: 40%;
+}
+
+.warning-text{
+    background-color: black;
+    color:#fff;
+    font-size: 175%;
+    position: relative;
+    top:-1.5rem;
+    white-space: pre-wrap; 
+}
+
+.submitbtn-div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53%;
+    gap: 0.8rem;
+    position: relative;
+    top:-1rem;
+}
+
+form input{
+   width: 99.3%;
+   height: 2rem;
+}
+
+form button{
+    width: 15%;
+    height: 2.5rem;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    transition: 1s;
+}
+
+#submit-btn{
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+}
+
+#clear-btn{
+    background-color: #fff;
+    color:rgb(46, 46, 46);
+}
+
+#submit-btn:hover{
+    background-color: #fff;
+    color:rgb(46, 46, 46);
+}
+
+#clear-btn:hover{
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+}
+
+#secrets-director{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 120%;
+    gap:0.5rem;
+    font-weight: 600;
+}
+
+
+#secrets-director i{
+    font-size: 130%;
+    position: relative;
+    top:0.2rem;
+}
+#secrets-director a{
+    text-decoration: none;
+    color:rgb(46, 46, 46);
+    position: relative;
+    transition: 1s;
+}
+
+#secrets-director a:hover{
+    text-decoration: none;
+    color:rgb(146, 146, 146);
+    position: relative;
+}
+
+.secret-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    position: relative;
+    top: -1.2rem;
+    word-break: break-word; 
+}
+
+.secret-div {
+    background-color: rgb(215, 215, 215); 
+    color: #000;
+    font-size: 140%;
+    border-radius: 3px;
+    padding: 0.5rem; 
+    width: 70%;
+    white-space: pre-wrap; 
+    position: relative;
+    left:1%;
+    font-weight: 600;
+}
+
+.delete-btn{
+    background-color: rgb(46, 46, 46);
+    color:#fff;
+    border-radius: 5px;
+    border-style: none;
+    width: 205%;
+    height: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    left:15%;
+    top:0.5rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.delete-btn:hover{
+    background-color: rgb(197, 2, 2);
+}
+
+@media (max-width:1290px){
+    .secret-div{
+        width: 75%;
+    }
+    .delete-btn{
+        position: relative;
+        left:7%;
+    }
+}
+
+@media(max-width:1030px){
+    form input{
+        width: 120%;
+        position: relative;
+        left: -11%;
+    }
+
+    form button{
+        width: 30%;
+    }
+    #secrets-director{
+        font-size: 100%;
+        
+    }
+
+    .delete-btn{
+        position: relative;
+        left: -12%;
+    }
+
+}
+
+@media(max-width:842px){
+    .warning-text{
+        font-size: 173%;
+    }
+}
+
+
+@media(max-width:823px){
+    .warning-text{
+        font-size: 160%;
+    }
+
+}
+
+@media(max-width:753px){
+    .warning-text{
+        font-size: 150%;
+    }
+
+}
+
+@media(max-width:708px){
+    .header{
+        font-size: 450%;
+    }
+    .warning-text{
+        font-size: 133%;
+    }
+
+    .delete-btn{
+        position: relative;
+        left: -20%;
+    }
+
+}
+
+
+@media(max-width:628px){
+    .user-secret img{
+        width: 47%;
+    }
+    .header{
+        font-size: 360%;
+    }
+    .warning-text{
+        font-size: 150%;
+    }
+
+    form input{
+        width: 140%;
+        position: relative;
+        left: -20%;
+    }
+
+    form button{
+        width: 35%;
+    }
+
+    .delete-btn{
+        position: relative;
+        left: -14%;
+    }
+
+}
+
+@media(max-width:569px){
+
+    .user-secret img{
+        width: 55%;
+    }
+
+    .warning-text{
+        font-size: 210%;
+    }
+
+    .secret-div{
+        position: relative;
+        left:3%;
+    }
+
+    .delete-btn{
+        position: relative;
+        left: 22%;
+    }
+
+}
+
+@media(max-width:500px){
+    .warning-text{
+        font-size: 190%;
+    }
+
+    .delete-btn{
+        position: relative;
+        left: 23%;
+    }
+
+}
+
+
+
+@media(max-width:456px){
+
+    .user-secret img{
+        width: 70%;
+    }
+
+    .warning-text{
+        font-size: 180%;
+    }
+
+    form button{
+        width: 45%;
+    }
+
+    .secret-div{
+        position: relative;
+        left: 4.5%;
+    }
+
+    .delete-btn{
+        position: relative;
+        left: 45%;
+    }
+
+}
+
+@media(max-width:431px){
+
+    .warning-text{
+        font-size: 160%;
+    }
+
+    form button{
+        width: 50%;
+    }
+
+    .delete-btn{
+        position: relative;
+        left: 48%;
+    }
+
+}
+
+@media(max-width:385px){
+    .warning-text{
+        font-size: 148%;
+    }
+
+}
+
+@media(max-width:374px){
+    .user-secret img{
+        width: 75%;
+    }
+
+    .warning-text{
+        font-size: 142%;
+    }
+
+    form button{
+        width: 53%;
+    }
+
+}
+
+@media(max-width:361px){
+    .user-secret img{
+        width:80%;
+    }
+    
+    .warning-text{
+        font-size: 138%;
+    }
+
+    .secret-div{
+        position: relative;
+        left: 5.5%;
+    }
+
+}
+
+@media(max-width:351px){
+    .warning-text{
+        font-size: 125%;
+    }
+
+}
+
+
+
